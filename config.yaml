@@ -1,0 +1,18 @@
+# SNS運用の方向性はこのファイルだけ編集すればOK
+
+account:
+  tone: "親しみやすい"          # 投稿の口調（例: 丁寧, カジュアル, 高級感 など）
+  hashtags_count: 5
+
+schedule:
+  post_hour: 9                  # 毎日この時刻(24h, JST)に自動投稿
+  report_hour: 21               # 毎日この時刻に分析レポートを出力
+
+# 投稿予定のキュー。上から順番に消費される。
+# image_url: 投稿する画像のURL
+# topic: 投稿のテーマ（キャプションはこのテーマからAIが自動生成）
+posts:
+  - image_url: "https://example.com/photo1.jpg"
+    topic: "今日のおすすめスポット"
+  - image_url: "https://example.com/photo2.jpg"
+    topic: "新商品の紹介"
